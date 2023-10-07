@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  [contenteditable] {
+    outline: none;
+  }
+
+  body {
+    @apply bg-zinc-900 text-zinc-50;
+  }
+
+  h2 {
+    @apply mb-6 mt-8 text-3xl font-bold;
+  }
+
+  p {
+    @apply mb-4 max-w-2xl;
+  }
+
+  img {
+    @apply my-4 w-full max-w-3xl rounded;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded bg-zinc-800 px-3 py-2 text-blue-500 hover:bg-zinc-700;
+
+    &-flat {
+      @apply bg-transparent hover:bg-zinc-800;
+    }
+  }
+}
